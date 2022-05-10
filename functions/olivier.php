@@ -75,22 +75,25 @@ function checkPassword($password) {
     //--------------------------------------------------Affichage du mot de passe---------------------------------------------------
 
     echo '<h1 class="text-center">Olivier</h1>';
-
+    
     echo 'Mot de passe : '.$password;
     echo '<p class=text-end></br>Force du mot de passe</p>';
     echo '<div class="progress">
             <div class="progress-bar progress-bar-striped '.$color.'" role="progressbar" style="width: '.$point.'%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
         </div>';
     echo '</br>';
-    echo '<div class=row>';
-    echo '<div class=col-4></div>';
-    echo '<div class=col-4>';
+    
     if ($point >= 100){
-      echo '<div class="btn btn-success align-center" role="alert">
+      echo '<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <a class="btn btn-success" role="button" href="index.php">
       OK
+      </a>
       </div>';
     }
     else{
+      echo '<div class=row>';
+    echo '<div class=col-4></div>';
+    echo '<div class=col-4>';
     echo '<div class="btn btn-primary align-middle" role="alert">
             Le mot de passe doit contenir aux moins:
           </div>';
@@ -103,28 +106,5 @@ function checkPassword($password) {
     echo '</div>';
     echo '<div class=col-4></div>';
     echo '</div>';
-    //----------------------------------------------------------------Popup------------------------------------------------------
-?>
-    <form action="index.php" method="GET">
-    <div class="modal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"></span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  <?php
   }
   ?>

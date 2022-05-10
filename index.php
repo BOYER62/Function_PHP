@@ -13,14 +13,17 @@
         <title>PHP - Les fonctions</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/spacelab/bootstrap.min.css">    
 
     </head>
     <body>
 
         <div class="container py-3">
-
-            <?php
-
+            <a role="modal" class="btn btn-lg btn-outline-primary" href="popup/popup.html">Ouverture d'un popup</a>
+            
+                <?php
+            
             if (isset($_GET['password'])) {
 
                 $password = $_GET['password'];
