@@ -1,6 +1,5 @@
 <?php
-    namespace olivier;
-    require_once("functions/olivier.php");  
+    include_once("functions/olivier.php");  
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +34,7 @@
 
                 // I use my personal function with my namespace
                 // ...
-                checkPassword($password);
+                olivier\checkPassword($password);
             }
             else {
                 ?>

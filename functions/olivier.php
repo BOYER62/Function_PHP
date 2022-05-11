@@ -92,19 +92,20 @@ function checkPassword($password) {
     }
     else{
       echo '<div class=row>';
-    echo '<div class=col-4></div>';
-    echo '<div class=col-4>';
-    echo '<div class="btn btn-primary align-middle" role="alert">
+      echo '<div class=col-4></div>';
+      echo '<div class=col-4>';
+      echo '<div class="btn btn-primary align-middle" role="alert">
             Le mot de passe doit contenir aux moins:
           </div>';
+    
+      echo '<p class="'.$minuscule.'">1 minuscule</p>';
+      echo '<p class="'.$majuscule.'">1 majuscule</p>';
+      echo '<p class="'.$nombre.'">1 nombre</p>';
+      echo '<p class="'.$caractere.'">12 caracteres</p>';
+      echo '<p class="'.$special.'">1 caractere spécial</p>';
+      echo '</div>';
+      echo '<div class=col-4></div>';
+      echo '</div>';
     }
-    echo '<p class="'.$minuscule.'">1 minuscule</p>';
-    echo '<p class="'.$majuscule.'">1 majuscule</p>';
-    echo '<p class="'.$nombre.'">1 nombre</p>';
-    echo '<p class="'.$caractere.'">12 caracteres</p>';
-    echo '<p class="'.$special.'">1 caractere spécial</p>';
-    echo '</div>';
-    echo '<div class=col-4></div>';
-    echo '</div>';
   }
-  ?>
+?>
